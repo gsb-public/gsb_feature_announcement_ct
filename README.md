@@ -1,2 +1,2 @@
-gsb_feature_idea_story_ct
+gsb_feature_announcement_ct
 =========================
