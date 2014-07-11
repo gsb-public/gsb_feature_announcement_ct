@@ -104,7 +104,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_onoff',
-      'weight' => 16,
+      'weight' => 14,
     ),
     'workbench_access_field' => 0,
   );
@@ -671,7 +671,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 10,
     ),
     'workbench_access_field' => 0,
   );
@@ -742,108 +742,6 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
       ),
       'type' => 'link_field',
       'weight' => 18,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-announcement-field_part_of_business_magazine'
-  $field_instances['node-announcement-field_part_of_business_magazine'] = array(
-    'bundle' => 'announcement',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
-        'weight' => 20,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_part_of_business_magazine',
-    'label' => 'Was this published in Stanford Business?',
-    'required' => 1,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_buttons',
-      'weight' => 13,
-    ),
-    'workbench_access_field' => 0,
-  );
-
-  // Exported field_instance: 'node-announcement-field_part_of_rethink'
-  $field_instances['node-announcement-field_part_of_rethink'] = array(
-    'bundle' => 'announcement',
-    'custom_add_another' => '',
-    'custom_remove' => '',
-    'default_value' => array(
-      0 => array(
-        'value' => 0,
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
-        'weight' => 19,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_part_of_rethink',
-    'label' => 'Was this promoted in Re:Think?',
-    'required' => 1,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-      ),
-      'type' => 'options_buttons',
-      'weight' => 12,
     ),
     'workbench_access_field' => 0,
   );
@@ -941,7 +839,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_select',
-      'weight' => 17,
+      'weight' => 15,
     ),
     'workbench_access_field' => 0,
   );
@@ -1157,8 +1055,6 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
   t('Region of Interest');
   t('Short URL');
   t('Story or Announcement');
-  t('Was this promoted in Re:Think?');
-  t('Was this published in Stanford Business?');
 
   return $field_instances;
 }

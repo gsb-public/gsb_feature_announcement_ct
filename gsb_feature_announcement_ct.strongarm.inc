@@ -19,16 +19,16 @@ function gsb_feature_announcement_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '16',
+          'weight' => '13',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '15',
+          'weight' => '12',
         ),
         'redirect' => array(
-          'weight' => '14',
+          'weight' => '11',
         ),
       ),
       'display' => array(),

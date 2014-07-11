@@ -67,6 +67,34 @@ function gsb_feature_announcement_ct_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_alumni_story|node|announcement|form';
+  $field_group->group_name = 'group_alumni_story';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'announcement';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Alumni Story',
+    'weight' => '8',
+    'children' => array(
+      0 => 'field_alumni_story',
+      1 => 'field_program_single',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_alumni_story|node|announcement|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_centers|node|announcement|form';
   $field_group->group_name = 'group_centers';
   $field_group->entity_type = 'node';
@@ -129,11 +157,11 @@ function gsb_feature_announcement_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related Content',
-    'weight' => '8',
+    'weight' => '7',
     'children' => array(
-      0 => 'field_person_fac_ref',
-      1 => 'field_related_idea_story',
-      2 => 'field_link_unlimited',
+      0 => 'field_link_unlimited',
+      1 => 'field_person_fac_ref',
+      2 => 'field_related_idea_story',
       3 => 'field_related_other_content',
     ),
     'format_type' => 'fieldset',
@@ -186,12 +214,12 @@ function gsb_feature_announcement_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tagging',
-    'weight' => '10',
+    'weight' => '9',
     'children' => array(
       0 => 'group_academic_area',
       1 => 'group_additional_topics',
-      2 => 'group_regions_of_interest',
-      3 => 'group_centers',
+      2 => 'group_centers',
+      3 => 'group_regions_of_interest',
       4 => 'group_tags',
     ),
     'format_type' => 'tabs',
