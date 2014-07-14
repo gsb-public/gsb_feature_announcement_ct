@@ -27,6 +27,7 @@ features[field_group][] = group_tags|node|announcement|form
 features[field_group][] = group_taxonomy|node|announcement|form
 features[field_instance][] = node-announcement-field_academic_area_unlimited
 features[field_instance][] = node-announcement-field_alumni_story
+features[field_instance][] = node-announcement-field_body
 features[field_instance][] = node-announcement-field_business_insight_topic
 features[field_instance][] = node-announcement-field_centers_research_programs
 features[field_instance][] = node-announcement-field_date
