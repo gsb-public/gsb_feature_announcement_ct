@@ -89,7 +89,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_alumni_story',
-    'label' => 'Alumni Mentioned',
+    'label' => 'Mentioned',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -100,7 +100,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
       'active' => 1,
       'module' => 'options',
       'settings' => array(
-        'display_label' => 0,
+        'display_label' => 1,
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'options_onoff',
@@ -915,11 +915,12 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_program_single',
-    'label' => 'Alumni Degree/Program',
+    'label' => 'Program',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
       'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1025,8 +1026,8 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-announcement-field_related_other_content'
-  $field_instances['node-announcement-field_related_other_content'] = array(
+  // Exported field_instance: 'node-announcement-field_related_other_unlimited'
+  $field_instances['node-announcement-field_related_other_unlimited'] = array(
     'bundle' => 'announcement',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -1036,13 +1037,17 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
+        'module' => 'field_collection',
         'settings' => array(
+          'add' => 'Add',
           'conditions' => array(),
-          'link' => FALSE,
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 16,
+        'type' => 'field_collection_view',
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1053,7 +1058,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_related_other_content',
+    'field_name' => 'field_related_other_unlimited',
     'label' => 'Publication',
     'required' => 0,
     'settings' => array(
@@ -1062,15 +1067,12 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
+      'active' => 0,
+      'module' => 'field_collection',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
-        'path' => '',
-        'size' => 60,
       ),
-      'type' => 'entityreference_autocomplete',
+      'type' => 'field_collection_embed',
       'weight' => 17,
     ),
     'workbench_access_field' => 0,
@@ -1129,8 +1131,6 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Academic Area');
   t('Additional Topics');
-  t('Alumni Degree/Program');
-  t('Alumni Mentioned');
   t('Body');
   t('Circle (Centers and Research Programs');
   t('Dek');
@@ -1141,6 +1141,8 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
   t('Keywords');
   t('Link');
   t('Media Format');
+  t('Mentioned');
+  t('Program');
   t('Publication');
   t('Publication Date');
   t('Region of Interest');
