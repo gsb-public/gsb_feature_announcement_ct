@@ -887,6 +887,54 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-announcement-field_pr_contact_unlimited'
+  $field_instances['node-announcement-field_pr_contact_unlimited'] = array(
+    'bundle' => 'announcement',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 21,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_pr_contact_unlimited',
+    'label' => 'PR Contact',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'use_hierarchical_select_lite' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'options_select',
+      'weight' => 12,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-announcement-field_program_single'
   $field_instances['node-announcement-field_program_single'] = array(
     'bundle' => 'announcement',
@@ -1142,6 +1190,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
   t('Link');
   t('Media Format');
   t('Mentioned');
+  t('PR Contact');
   t('Program');
   t('Publication');
   t('Publication Date');
