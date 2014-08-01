@@ -77,16 +77,16 @@ function gsb_feature_announcement_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '15',
+          'weight' => '16',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
         'redirect' => array(
-          'weight' => '13',
+          'weight' => '14',
         ),
       ),
       'display' => array(
@@ -139,6 +139,13 @@ function gsb_feature_announcement_ct_strongarm() {
   $strongarm->name = 'node_submitted_announcement';
   $strongarm->value = 0;
   $export['node_submitted_announcement'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_announcement_pattern';
+  $strongarm->value = 'newsroom/school-news/[node:field_pathauto_title_alias]';
+  $export['pathauto_node_announcement_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
