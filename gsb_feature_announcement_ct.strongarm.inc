@@ -92,6 +92,12 @@ function gsb_feature_announcement_ct_strongarm() {
       'display' => array(
         'gsb_announcement_school_listing_entity_view_1' => array(
           'default' => array(
+            'weight' => '6',
+            'visible' => TRUE,
+          ),
+        ),
+        'gsb_media_inquiries' => array(
+          'default' => array(
             'weight' => '5',
             'visible' => TRUE,
           ),

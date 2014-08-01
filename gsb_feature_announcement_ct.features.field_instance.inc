@@ -23,7 +23,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -71,7 +71,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -206,7 +206,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -250,7 +250,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -452,7 +452,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -495,7 +495,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -549,7 +549,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -616,7 +616,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -683,7 +683,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -875,7 +875,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -920,7 +920,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -963,7 +963,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1102,7 +1102,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
