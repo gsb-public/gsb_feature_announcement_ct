@@ -160,9 +160,9 @@ function gsb_feature_announcement_ct_field_group_info() {
     'weight' => '9',
     'children' => array(
       0 => 'field_link_unlimited',
-      1 => 'field_person_fac_ref',
-      2 => 'field_related_idea_story',
-      3 => 'field_related_other_unlimited',
+      1 => 'field_related_idea_story',
+      2 => 'field_related_other_unlimited',
+      3 => 'field_related_faculty',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
