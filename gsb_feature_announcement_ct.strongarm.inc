@@ -73,6 +73,9 @@ function gsb_feature_announcement_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'news_listing' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -95,6 +98,10 @@ function gsb_feature_announcement_ct_strongarm() {
             'weight' => '6',
             'visible' => TRUE,
           ),
+          'news_listing' => array(
+            'weight' => '13',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
@@ -103,6 +110,10 @@ function gsb_feature_announcement_ct_strongarm() {
           ),
           'idea_story_related' => array(
             'weight' => '11',
+            'visible' => FALSE,
+          ),
+          'news_listing' => array(
+            'weight' => '12',
             'visible' => FALSE,
           ),
         ),
