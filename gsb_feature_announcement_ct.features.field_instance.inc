@@ -1403,6 +1403,88 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
+  // Exported field_instance: 'node-announcement-field_search_field'
+  $field_instances['node-announcement-field_search_field'] = array(
+    'bundle' => 'announcement',
+    'custom_add_another' => '',
+    'custom_remove' => '',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'concat_field',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'concat_field_blank',
+        'weight' => 29,
+      ),
+      'idea_story_related' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'news_listing' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_search_field',
+    'label' => 'Search field',
+    'required' => 0,
+    'settings' => array(
+      'custom_add_another' => '',
+      'custom_remove' => '',
+      'selected_fields' => array(
+        'concat_field_entity_label' => 'concat_field_entity_label',
+        'field_academic_area_unlimited' => 'field_academic_area_unlimited',
+        'field_alumni_story' => 0,
+        'field_body' => 'field_body',
+        'field_business_insight_topic' => 'field_business_insight_topic',
+        'field_centers_research_programs' => 'field_centers_research_programs',
+        'field_date' => 'field_date',
+        'field_editorial_summary' => 'field_editorial_summary',
+        'field_icon' => 0,
+        'field_image_key_image' => 0,
+        'field_link_key_audio' => 0,
+        'field_link_key_video' => 0,
+        'field_link_single' => 0,
+        'field_link_unlimited' => 0,
+        'field_pathauto_title_alias' => 0,
+        'field_pr_contact_unlimited' => 'field_pr_contact_unlimited',
+        'field_program_single' => 'field_program_single',
+        'field_region_of_interest' => 'field_region_of_interest',
+        'field_related_faculty' => 'field_related_faculty',
+        'field_related_idea_story' => 'field_related_idea_story',
+        'field_related_other_unlimited' => 'field_related_other_unlimited',
+        'field_tag' => 'field_tag',
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'concat_field',
+      'settings' => array(
+        'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
+      ),
+      'type' => 'concat_field_default',
+      'weight' => 22,
+    ),
+    'workbench_access_field' => 0,
+  );
+
   // Exported field_instance: 'node-announcement-field_tag'
   $field_instances['node-announcement-field_tag'] = array(
     'bundle' => 'announcement',
@@ -1481,6 +1563,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
   t('Publication');
   t('Publication Date');
   t('Region of Interest');
+  t('Search field');
   t('Short URL');
   t('Story or Announcement');
   t('URL Alias');

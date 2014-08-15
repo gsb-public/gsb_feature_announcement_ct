@@ -53,6 +53,7 @@ features[field_instance][] = node-announcement-field_region_of_interest
 features[field_instance][] = node-announcement-field_related_faculty
 features[field_instance][] = node-announcement-field_related_idea_story
 features[field_instance][] = node-announcement-field_related_other_unlimited
+features[field_instance][] = node-announcement-field_search_field
 features[field_instance][] = node-announcement-field_tag
 features[node][] = announcement
 features[variable][] = field_bundle_settings_node__announcement
