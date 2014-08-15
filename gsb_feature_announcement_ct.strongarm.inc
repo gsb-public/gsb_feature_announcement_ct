@@ -102,6 +102,10 @@ function gsb_feature_announcement_ct_strongarm() {
             'weight' => '13',
             'visible' => FALSE,
           ),
+          'idea_story_related' => array(
+            'weight' => '10',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
