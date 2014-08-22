@@ -117,7 +117,7 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_person_fac_ref' => array(
+    'field_pr_contact_unlimited' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -130,16 +130,10 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_pr_contact_unlimited' => array(
+    'field_related_faculty' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'div',
-          'ow-cl' => '',
-          'ow-def-cl' => TRUE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
         ),
       ),
     ),
@@ -344,7 +338,7 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
         7 => 'field_pr_contact_unlimited',
         8 => 'group_wrapper_related',
         9 => 'related_title',
-        10 => 'field_person_fac_ref',
+        10 => 'field_related_faculty',
         11 => 'field_related_idea_story',
         12 => 'field_related_other_unlimited',
         13 => 'field_link_unlimited',
@@ -361,7 +355,7 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
       'field_pr_contact_unlimited' => 'right',
       'group_wrapper_related' => 'right',
       'related_title' => 'right',
-      'field_person_fac_ref' => 'right',
+      'field_related_faculty' => 'right',
       'field_related_idea_story' => 'right',
       'field_related_other_unlimited' => 'right',
       'field_link_unlimited' => 'right',
