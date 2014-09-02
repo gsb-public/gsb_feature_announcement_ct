@@ -106,6 +106,10 @@ function gsb_feature_announcement_ct_strongarm() {
             'weight' => '10',
             'visible' => FALSE,
           ),
+          'teaser' => array(
+            'weight' => '31',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
@@ -118,6 +122,10 @@ function gsb_feature_announcement_ct_strongarm() {
           ),
           'news_listing' => array(
             'weight' => '12',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '33',
             'visible' => FALSE,
           ),
         ),
