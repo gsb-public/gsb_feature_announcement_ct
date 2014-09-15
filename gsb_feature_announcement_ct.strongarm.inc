@@ -76,6 +76,9 @@ function gsb_feature_announcement_ct_strongarm() {
       'news_listing' => array(
         'custom_settings' => TRUE,
       ),
+      'idea_story_latest_stories' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -95,7 +98,7 @@ function gsb_feature_announcement_ct_strongarm() {
       'display' => array(
         'gsb_announcement_school_listing_entity_view_1' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '7',
             'visible' => TRUE,
           ),
           'news_listing' => array(
@@ -113,7 +116,7 @@ function gsb_feature_announcement_ct_strongarm() {
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '6',
             'visible' => TRUE,
           ),
           'idea_story_related' => array(
