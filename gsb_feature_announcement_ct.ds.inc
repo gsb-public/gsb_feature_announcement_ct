@@ -490,6 +490,7 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
         14 => 'field_related_idea_story',
         15 => 'field_related_other_unlimited',
         16 => 'field_link_unlimited',
+        17 => 'gsb_media_toolkit',
       ),
     ),
     'fields' => array(
@@ -510,6 +511,7 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
       'field_related_idea_story' => 'right',
       'field_related_other_unlimited' => 'right',
       'field_link_unlimited' => 'right',
+      'gsb_media_toolkit' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(

@@ -132,6 +132,12 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => FALSE,
           ),
         ),
+        'gsb_media_toolkit' => array(
+          'default' => array(
+            'weight' => '30',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );

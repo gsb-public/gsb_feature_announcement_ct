@@ -85,3 +85,45 @@ function gsb_feature_announcement_ct_ds_pre_render_alter(&$layout_render_array, 
   }
 
 }
+
+
+/**
+ * Implements hook_field_extra_fields().
+ */
+function gsb_feature_announcement_ct_field_extra_fields() {
+
+  $extra['node']['announcement']['display']['gsb_media_toolkit'] = array(
+    'label' => t('Media Toolkit'),
+    'description' => t('Media Toolkit'),
+    'weight' => 30,
+  );
+
+  return $extra;
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function gsb_feature_announcement_ct_node_view($node, $view_mode, $langcode) {
+  // If this field is not configured for this view mode, skip it.
+  $fields = field_extra_fields_get_display('node', $node->type, $view_mode);
+  if (empty($fields['gsb_media_toolkit']['visible'])) {
+    return;
+  }
+
+  $entity_type = 'fieldable_panels_pane';
+  $entity_id = '10426';
+  $entity = entity_load_single($entity_type, $entity_id);
+  $render_array = entity_view($entity_type, array($entity_id => $entity));
+  $content = render($render_array);
+
+  $node->content['gsb_media_toolkit'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'class' => array(
+        'media-toolkit',
+      ),
+    ),
+    '#children' => $content,
+  );
+}
