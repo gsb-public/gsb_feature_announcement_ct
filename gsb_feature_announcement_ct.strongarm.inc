@@ -134,7 +134,7 @@ function gsb_feature_announcement_ct_strongarm() {
         ),
         'gsb_media_toolkit' => array(
           'default' => array(
-            'weight' => '30',
+            'weight' => '10',
             'visible' => TRUE,
           ),
         ),
