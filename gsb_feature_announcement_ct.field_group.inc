@@ -78,7 +78,7 @@ function gsb_feature_announcement_ct_field_group_info() {
     'weight' => '10',
     'children' => array(
       0 => 'field_alumni_story',
-      1 => 'field_program_single',
+      1 => 'field_program_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -160,9 +160,9 @@ function gsb_feature_announcement_ct_field_group_info() {
     'weight' => '9',
     'children' => array(
       0 => 'field_link_unlimited',
-      1 => 'field_related_idea_story',
-      2 => 'field_related_other_unlimited',
-      3 => 'field_related_faculty',
+      1 => 'field_related_faculty',
+      2 => 'field_related_idea_story',
+      3 => 'field_related_other_unlimited',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

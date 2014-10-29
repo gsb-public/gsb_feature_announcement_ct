@@ -1135,8 +1135,8 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-announcement-field_program_single'
-  $field_instances['node-announcement-field_program_single'] = array(
+  // Exported field_instance: 'node-announcement-field_program_unlimited'
+  $field_instances['node-announcement-field_program_unlimited'] = array(
     'bundle' => 'announcement',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -1146,32 +1146,35 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 29,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 32,
       ),
       'idea_story_related' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 0,
       ),
       'news_listing' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'field_program_single',
+    'field_name' => 'field_program_unlimited',
     'label' => 'Program',
     'required' => 0,
     'settings' => array(
@@ -1499,7 +1502,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'maxlength_js_label' => 'Content limited to @limit characters, remaining: <strong>@remaining</strong>',
       ),
       'type' => 'concat_field_default',
-      'weight' => 22,
+      'weight' => 18,
     ),
     'workbench_access_field' => 0,
   );
