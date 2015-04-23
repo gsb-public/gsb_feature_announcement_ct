@@ -1549,7 +1549,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_related_other_unlimited',
-    'label' => 'Publication or Event',
+    'label' => 'Existing Node Title',
     'required' => 0,
     'settings' => array(
       'custom_add_another' => '',
@@ -1722,6 +1722,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
   t('Body');
   t('Circle (Centers and Research Programs');
   t('Dek');
+  t('Existing Node Title');
   t('Faculty');
   t('Key Audio');
   t('Key Image');
@@ -1733,7 +1734,6 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
   t('PR Contact');
   t('Program');
   t('Publication Date');
-  t('Publication or Event');
   t('Region of Interest');
   t('Search field');
   t('Short URL');
