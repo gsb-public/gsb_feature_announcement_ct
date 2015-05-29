@@ -98,7 +98,7 @@ function gsb_feature_announcement_ct_strongarm() {
           'weight' => '16',
         ),
         'redirect' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
       ),
       'display' => array(
