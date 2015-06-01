@@ -309,7 +309,8 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-announcement-field_centers_research_programs'
+  // Exported field_instance:
+  // 'node-announcement-field_centers_research_programs'
   $field_instances['node-announcement-field_centers_research_programs'] = array(
     'bundle' => 'announcement',
     'custom_add_another' => '',
@@ -612,13 +613,13 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'file',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 34,
+        'weight' => 24,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1134,7 +1135,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -1284,14 +1285,15 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'conditions' => array(),
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'people_fpp',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 33,
+        'type' => 'entityreference_entity_view',
+        'weight' => 20,
       ),
       'idea_story_related' => array(
         'label' => 'above',
@@ -1542,7 +1544,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'module' => 'field_collection',
         'settings' => array(
           'conditions' => array(),
-          'view_mode' => 'full',
+          'view_mode' => 'people_fpp',
         ),
         'type' => 'field_collection_fields',
         'weight' => 19,
@@ -1612,7 +1614,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'view_mode' => 'idea_story_related',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
@@ -1681,7 +1683,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'gsb_field_formatter_related_items_field_collection',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',
