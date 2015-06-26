@@ -459,7 +459,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'default' => array(
         'label' => 'hidden',
@@ -489,7 +489,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'idea_story_related' => array(
         'label' => 'hidden',

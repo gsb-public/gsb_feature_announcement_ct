@@ -59,7 +59,7 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'compact';
   $ds_fieldsetting->settings = array(
     'media_icon' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -70,7 +70,7 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
       ),
     ),
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -358,7 +358,7 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'expanded';
   $ds_fieldsetting->settings = array(
     'media_icon' => array(
-      'weight' => '0',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -369,7 +369,7 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
       ),
     ),
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -717,15 +717,15 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'media_icon',
-        1 => 'title',
-        2 => 'field_date',
+        0 => 'field_date',
+        1 => 'media_icon',
+        2 => 'title',
       ),
     ),
     'fields' => array(
+      'field_date' => 'ds_content',
       'media_icon' => 'ds_content',
       'title' => 'ds_content',
-      'field_date' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -819,9 +819,9 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
-        0 => 'media_icon',
-        1 => 'title',
-        2 => 'field_date',
+        0 => 'field_date',
+        1 => 'media_icon',
+        2 => 'title',
         3 => 'field_editorial_summary',
       ),
       'right' => array(
@@ -829,9 +829,9 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
+      'field_date' => 'left',
       'media_icon' => 'left',
       'title' => 'left',
-      'field_date' => 'left',
       'field_editorial_summary' => 'left',
       'field_image_key_image' => 'right',
     ),
