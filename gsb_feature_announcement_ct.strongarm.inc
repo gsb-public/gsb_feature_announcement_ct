@@ -94,6 +94,12 @@ function gsb_feature_announcement_ct_strongarm() {
       'alumni_name' => array(
         'custom_settings' => FALSE,
       ),
+      'compact' => array(
+        'custom_settings' => TRUE,
+      ),
+      'expanded' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -132,6 +138,14 @@ function gsb_feature_announcement_ct_strongarm() {
             'weight' => '13',
             'visible' => FALSE,
           ),
+          'compact' => array(
+            'weight' => '13',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
+            'weight' => '12',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_inquiries' => array(
           'default' => array(
@@ -154,6 +168,14 @@ function gsb_feature_announcement_ct_strongarm() {
             'weight' => '12',
             'visible' => FALSE,
           ),
+          'compact' => array(
+            'weight' => '12',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
+            'weight' => '15',
+            'visible' => FALSE,
+          ),
         ),
         'gsb_media_toolkit' => array(
           'default' => array(
@@ -161,6 +183,14 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => TRUE,
           ),
           'alumni_featured_content' => array(
+            'weight' => '14',
+            'visible' => FALSE,
+          ),
+          'compact' => array(
+            'weight' => '14',
+            'visible' => FALSE,
+          ),
+          'expanded' => array(
             'weight' => '14',
             'visible' => FALSE,
           ),
