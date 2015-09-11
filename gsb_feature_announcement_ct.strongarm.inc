@@ -139,11 +139,11 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '13',
+            'weight' => '14',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => FALSE,
           ),
         ),
@@ -169,11 +169,11 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '12',
+            'weight' => '13',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '15',
+            'weight' => '16',
             'visible' => FALSE,
           ),
         ),
@@ -187,11 +187,11 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => FALSE,
           ),
           'compact' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => FALSE,
           ),
           'expanded' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => FALSE,
           ),
         ),
