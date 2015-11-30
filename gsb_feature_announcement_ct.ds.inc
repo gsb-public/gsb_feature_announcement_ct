@@ -584,8 +584,8 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'announcement';
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
-    'insights_label_school_news' => array(
-      'weight' => '0',
+    'media_icon' => array(
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -595,8 +595,8 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
-    'media_icon' => array(
-      'weight' => '3',
+    'insights_label_school_news' => array(
+      'weight' => '0',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
