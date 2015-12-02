@@ -200,6 +200,10 @@ function gsb_feature_announcement_ct_strongarm() {
             'weight' => '15',
             'visible' => FALSE,
           ),
+          'news_listing' => array(
+            'weight' => '30',
+            'visible' => FALSE,
+          ),
         ),
       ),
     ),
