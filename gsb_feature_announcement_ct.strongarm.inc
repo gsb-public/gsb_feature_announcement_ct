@@ -13,6 +13,27 @@ function gsb_feature_announcement_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_announcement';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_announcement'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_announcement';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_announcement'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_announcement';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_announcement'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__announcement';
   $strongarm->value = array(
     'view_modes' => array(
@@ -120,6 +141,9 @@ function gsb_feature_announcement_ct_strongarm() {
         ),
         'redirect' => array(
           'weight' => '15',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(
@@ -270,6 +294,16 @@ function gsb_feature_announcement_ct_strongarm() {
   $strongarm->name = 'workbench_moderation_default_state_announcement';
   $strongarm->value = 'draft';
   $export['workbench_moderation_default_state_announcement'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_announcement';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_node_announcement'] = $strongarm;
 
   return $export;
 }
