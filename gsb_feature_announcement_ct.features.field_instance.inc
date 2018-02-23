@@ -113,7 +113,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 27,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -383,7 +383,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 25,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -747,7 +747,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'file_default',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1341,7 +1341,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'expanded' => array(
         'label' => 'hidden',
@@ -1444,7 +1444,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 30,
+        'weight' => 29,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -1680,7 +1680,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 32,
+        'weight' => 28,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -1989,15 +1989,16 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
+        'label' => 'hidden',
+        'module' => 'gsb_feature_existing_node_list_fpp',
         'settings' => array(
-          'bypass_access' => FALSE,
           'conditions' => array(),
-          'link' => FALSE,
+          'links' => 0,
+          'use_content_language' => 1,
+          'view_mode' => 'idea_story_related',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 33,
+        'type' => 'entityreference_entity_view',
+        'weight' => 23,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2072,7 +2073,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 31,
+        'weight' => 30,
       ),
       'expanded' => array(
         'label' => 'above',
@@ -2170,7 +2171,7 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 26,
       ),
       'expanded' => array(
         'label' => 'above',

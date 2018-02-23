@@ -347,6 +347,19 @@ function gsb_feature_announcement_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_related_programs' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['node|announcement|default'] = $ds_fieldsetting;
 
@@ -771,8 +784,9 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
         15 => 'field_person_ref_unlimited',
         16 => 'field_related_idea_story',
         17 => 'field_related_other_unlimited',
-        18 => 'field_link_unlimited',
-        19 => 'field_file_unlimited_public',
+        18 => 'field_related_programs',
+        19 => 'field_link_unlimited',
+        20 => 'field_file_unlimited_public',
       ),
     ),
     'fields' => array(
@@ -794,6 +808,7 @@ function gsb_feature_announcement_ct_ds_layout_settings_info() {
       'field_person_ref_unlimited' => 'right',
       'field_related_idea_story' => 'right',
       'field_related_other_unlimited' => 'right',
+      'field_related_programs' => 'right',
       'field_link_unlimited' => 'right',
       'field_file_unlimited_public' => 'right',
     ),
