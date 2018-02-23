@@ -75,7 +75,7 @@ function gsb_feature_announcement_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni/Past Participant Mention',
-    'weight' => '11',
+    'weight' => '10',
     'children' => array(
       0 => 'field_alumni_story',
       1 => 'field_program_unlimited',
@@ -138,6 +138,7 @@ function gsb_feature_announcement_ct_field_group_info() {
       3 => 'field_related_other_unlimited',
       4 => 'field_file_unlimited_public',
       5 => 'field_person_ref_unlimited',
+      6 => 'field_related_programs',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -189,7 +190,7 @@ function gsb_feature_announcement_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Tagging',
-    'weight' => '12',
+    'weight' => '11',
     'children' => array(
       0 => 'group_academic_area',
       1 => 'group_additional_topics',

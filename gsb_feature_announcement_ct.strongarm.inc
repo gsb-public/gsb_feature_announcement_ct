@@ -131,19 +131,19 @@ function gsb_feature_announcement_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '17',
+          'weight' => '16',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '16',
-        ),
-        'redirect' => array(
           'weight' => '15',
         ),
+        'redirect' => array(
+          'weight' => '14',
+        ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '18',
         ),
       ),
       'display' => array(
