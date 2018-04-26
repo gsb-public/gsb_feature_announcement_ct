@@ -243,7 +243,7 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => FALSE,
           ),
           'homepage_school_news' => array(
-            'weight' => '14',
+            'weight' => '15',
             'visible' => FALSE,
           ),
         ),
@@ -277,7 +277,7 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => FALSE,
           ),
           'homepage_school_news' => array(
-            'weight' => '13',
+            'weight' => '14',
             'visible' => FALSE,
           ),
         ),
@@ -303,7 +303,7 @@ function gsb_feature_announcement_ct_strongarm() {
             'visible' => FALSE,
           ),
           'homepage_school_news' => array(
-            'weight' => '15',
+            'weight' => '16',
             'visible' => FALSE,
           ),
         ),
