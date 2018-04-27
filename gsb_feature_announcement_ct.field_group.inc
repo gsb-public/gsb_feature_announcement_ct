@@ -134,7 +134,8 @@ function gsb_feature_announcement_ct_field_group_info() {
     'children' => array(
       0 => 'field_date',
       1 => 'field_icon',
-      2 => 'title',
+      2 => 'media_icon',
+      3 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(

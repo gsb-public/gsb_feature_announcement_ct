@@ -1029,11 +1029,8 @@ function gsb_feature_announcement_ct_field_default_field_instances() {
       ),
       'homepage_school_news' => array(
         'label' => 'hidden',
-        'module' => 'list',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'list_default',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'idea_story_related' => array(
